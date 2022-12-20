@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using SistemaDeHospedagem.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<HospedagemContext>(opt =>
+    opt.UseInMemoryDatabase("ToDoReserva"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
