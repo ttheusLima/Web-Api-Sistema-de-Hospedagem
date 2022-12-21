@@ -15,6 +15,8 @@ namespace SistemaDeHospedagem.Controllers
     {
         private readonly HospedagemContext _context;
 
+        public ReservaController(){ }
+
         public ReservaController(HospedagemContext context)
         {
             _context = context;
