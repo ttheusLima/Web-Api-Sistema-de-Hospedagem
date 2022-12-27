@@ -36,7 +36,7 @@ namespace SistemaDeHospedagem.Controllers
         public async Task<ActionResult<Reserva>> GetReservaPorId(int id)
         {
             var getReserva = await _context.Reservas.Include(x => x.Hospedes)
-                                                    .Include(x => x.suite)
+                                                    .Include(x => x.Suite)
                                                     .SingleAsync(x => x.IdReserva == id);
 
             if(getReserva == null)
