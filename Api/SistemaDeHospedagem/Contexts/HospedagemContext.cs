@@ -3,12 +3,15 @@ using SistemaDeHospedagem.Models;
 
 namespace SistemaDeHospedagem.Contexts
 {
-    public class HospedagemContext :  DbContext
+    public class HospedagemContext : DbContext
     {
-        public HospedagemContext(DbContextOptions<HospedagemContext> options) : base(options){ }
+        public HospedagemContext() { }
 
-        public DbSet<Cliente> Clientes { get; set; } = null;
-        public DbSet<Reserva> Reservas { get; set; } = null;
-        public DbSet<Suite> Suites { get; set; } = null;
+        public HospedagemContext(DbContextOptions<HospedagemContext> options) : base(options){ }
+        
+        public virtual DbSet<Cliente> Clientes { get; set; }
+        public virtual DbSet<Reserva> Reservas { get; set; }
+        public virtual DbSet<Suite> Suites { get; set; }
+
     }
 }
