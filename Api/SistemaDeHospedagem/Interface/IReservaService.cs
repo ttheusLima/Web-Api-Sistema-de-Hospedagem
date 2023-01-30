@@ -9,7 +9,8 @@ namespace SistemaDeHospedagem.Interface
     public interface IReservaService
     {
         public void Post_Reserva(Reserva reserva);
-        public Reserva GetReservaPorId(int id);
-        public List<Reserva> Get_Produtos();
+        public Reserva Get_ReservaPorId(int id);
+        public List<Reserva> Get_Reservas();
+        public void Delete_Reserca(Reserva reserva);
     }
 }
