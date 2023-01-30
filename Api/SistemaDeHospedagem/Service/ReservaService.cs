@@ -26,18 +26,24 @@ namespace SistemaDeHospedagem.Service
             _context.SaveChanges();
         }
 
-        public Reserva GetReservaPorId(int id)
+        public Reserva Get_ReservaPorId(int id)
         {
-            var reserva = _context.Reservas.Include(x => x.Hospedes)
+            return _context.Reservas.Include(x => x.Hospedes)
                                             .Include(x => x.Suite)
                                             .FirstOrDefault(r => r.IdReserva == id);
-
-            return reserva;
         }
 
-        public List<Reserva> Get_Produtos()
+        public List<Reserva> Get_Reservas()
         {
-            return _context.Reservas.ToList();
+            return _context.Reservas.Include(x => x.Hospedes)
+                                    .Include(x => x.Suite)
+                                    .ToList();
+        }
+
+        public void Delete_Reserca(Reserva reserva)
+        {
+            _context.Reservas.Remove(reserva);
+            _context.SaveChanges();
         }
     }
 }
