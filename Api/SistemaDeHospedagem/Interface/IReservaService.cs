@@ -11,6 +11,6 @@ namespace SistemaDeHospedagem.Interface
         public void Post_Reserva(Reserva reserva);
         public Reserva Get_ReservaPorId(int id);
         public List<Reserva> Get_Reservas();
-        public void Delete_Reserca(Reserva reserva);
+        public void Delete_Reserva(Reserva reserva);
     }
 }

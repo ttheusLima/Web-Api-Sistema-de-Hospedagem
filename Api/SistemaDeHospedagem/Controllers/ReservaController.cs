@@ -44,7 +44,7 @@ namespace SistemaDeHospedagem.Controllers
 
             if(reserva is null){ NotFound(); }
 
-            _reservaService.Delete_Reserca(reserva);
+            _reservaService.Delete_Reserva(reserva);
 
             return NoContent(); 
         }

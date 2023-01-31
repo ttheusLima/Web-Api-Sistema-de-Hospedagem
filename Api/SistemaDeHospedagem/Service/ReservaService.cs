@@ -40,7 +40,7 @@ namespace SistemaDeHospedagem.Service
                                     .ToList();
         }
 
-        public void Delete_Reserca(Reserva reserva)
+        public void Delete_Reserva(Reserva reserva)
         {
             _context.Reservas.Remove(reserva);
             _context.SaveChanges();
