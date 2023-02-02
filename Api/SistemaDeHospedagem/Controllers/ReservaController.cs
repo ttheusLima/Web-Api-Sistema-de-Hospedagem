@@ -5,7 +5,7 @@ using SistemaDeHospedagem.Service;
 namespace SistemaDeHospedagem.Controllers
 {
     [ApiController]
-    [Route("docs-api/[controller]")]
+    [Route("api-docs/[controller]")]
     public class ReservaController : ControllerBase
     {
         private readonly ReservaService _reservaService;
