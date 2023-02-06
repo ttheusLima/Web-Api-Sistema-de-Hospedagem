@@ -10,9 +10,9 @@
 - A API não tem mecanismos de autenticação/autorização; e
 - A aplicação implementa os mecanismos de persistência "em memória".
 
-## Modelo Conceitual
+## Diagrama de Classes UML
 
-<img src="./Img/Projeto_Conceitual.png" />
+<img src="./Img/Projeto_DiagramaDeClasses.png" />
 
 ## Métodos
 
@@ -49,3 +49,8 @@ Esse é o schema (model) de Reserva, utilizado para passar os dados
   "diasReservados": 0
 }
 ```
+
+## EVIDÊNCIAS DE QUE OS TESTE UNITÁRIO PASSARAM COM ÊXITO ☑️
+
+Link para a classe de teste de ReservaServiceTest: [Clique para ver](https://github.com/ttheusLima/Web-Api-Sistema-de-Hospedagem/blob/main/Api/Test/ReservaServiceTest.cs)
+>![img](img/Teste-ReservaServiceTest.png/)
