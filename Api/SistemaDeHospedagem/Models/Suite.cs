@@ -6,7 +6,7 @@ namespace SistemaDeHospedagem.Models
     {
         
         [Key]
-        public int idSuite { get; set; }
+        public int IdSuite { get; set; }
         public EnumTipoSuite TipoSuite { get; set; }
         public int CapacidadeSuite { get; set; }
         public decimal ValorDiaria { get; set; }

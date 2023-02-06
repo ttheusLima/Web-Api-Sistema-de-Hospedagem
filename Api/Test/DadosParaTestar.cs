@@ -27,9 +27,9 @@ namespace Test
         public List<Suite> GetTestSuite()
         {
             var testSuite = new List<Suite>();
-            testSuite.Add(new Suite {idSuite = 1, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
-            testSuite.Add(new Suite {idSuite = 2, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
-            testSuite.Add(new Suite {idSuite = 3, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
+            testSuite.Add(new Suite {IdSuite = 1, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
+            testSuite.Add(new Suite {IdSuite = 2, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
+            testSuite.Add(new Suite {IdSuite = 3, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M } );
         
             return testSuite;
         }

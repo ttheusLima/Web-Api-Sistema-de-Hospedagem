@@ -34,7 +34,7 @@ namespace Test
         public void PostReserva_DeverarCriarUmaNovaReserva()
         {
 
-            var simplesSuite = new Suite {idSuite = 4, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M };
+            var simplesSuite = new Suite {IdSuite = 4, TipoSuite = EnumTipoSuite.Suite_Comum, CapacidadeSuite = 2, ValorDiaria = 170M };
             var simplesCliente = new List<Cliente>();
             simplesCliente.Add(new Cliente { IdCliente = 4, Nome = "Amanda Silva", Cpf = 16645678, Telefone = 873333211 });
             var simplesDadosReserva = new Reserva { IdReserva = 4, Suite = simplesSuite, Hospedes = simplesCliente, DiasReservados = 3 };
