@@ -53,4 +53,4 @@ Esse é o schema (model) de Reserva, utilizado para passar os dados
 ## EVIDÊNCIAS DE QUE OS TESTE UNITÁRIO PASSARAM COM ÊXITO ☑️
 
 Link para a classe de teste de ReservaServiceTest: [Clique para ver](https://github.com/ttheusLima/Web-Api-Sistema-de-Hospedagem/blob/main/Api/Test/ReservaServiceTest.cs)
->![img](img/Teste-ReservaServiceTest.png/)
+>![img](Img/Teste-ReservaServiceTest.png/)
